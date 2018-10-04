@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+    <style>
+      body{
+        min-width: 300px;
+      }
+      p {
+        margin-bottom: 0.5rem;
+      }
+      label {
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="settings-form">
+      <div>
+        <label for="">Time until blurr (ms)</label>
+        <p>How long should it wait until it starts blurring.</p>
+        <input id="blurr-time" type="number" placeholder="(ms)">
+      </div>
+      <div>
+        <label for="">Blurr Duration (ms)</label>
+        <p>How long should the transition to the blurred screen take.</p>
+        <input id="blurr-duration" type="number" placeholder="(ms)">
+      </div>
+      <button class="button-primary">Save</button>
+    </form>
+    
+    <script src="popup.js"></script>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>
